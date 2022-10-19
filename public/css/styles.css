@@ -1,0 +1,389 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 20px 20px 10px;
+}
+
+header div.logo {
+    flex: 1;
+    padding: 10px;
+    min-width: 50%;
+}
+
+header .search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 50%;
+}
+
+header .search form {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    gap: 10px;
+}
+
+header .search form input {
+    border: transparent;
+    width: 100%;
+}
+
+header .search form input:focus {
+    outline: none;
+}
+
+header .search form button {
+    border: transparent;
+    background: transparent;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+header .form .input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-basis: 0;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 50%;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header .top-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 20px 0px 10px;
+    padding: 10px;
+    width: 40px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.price {
+    width: 30%;
+}
+
+.discount {
+    width: 70%;
+}
+
+.copy-header {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 12px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    text-align: center;
+    color: #666;
+
+    padding: 10px
+}
+
+.footer i {
+    width: 2em;
+    margin: 10px;
+    color: blue;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+@media (min-width: 425px) {
+
+    main section article .description {
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        display: flex;
+        margin: 0 2px;
+    }
+
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+        width: 45%;
+    }
+
+    .price {
+        width: 70%;
+    }
+
+    .discount {
+        width: 30%;
+    }
+
+    header .logo,
+    header .search {
+        min-width: initial;
+    }
+
+    .left-navbar,
+    .right-navbar {
+        gap: 2px;
+    }
+
+    .main-navbar a {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 540px) {
+
+    .left-navbar,
+    .right-navbar {
+        gap: 5px;
+    }
+
+    .main-navbar a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .products article {
+        width: 20%
+    }
+
+    main section article .description {
+        opacity: 0;
+        margin-top: 20px;
+        transition-property: opacity;
+        transition-duration: 0.2s;
+    }
+
+    main section article .description:hover {
+        opacity: 1;
+    }
+
+    main section article {
+        box-shadow: none;
+        transition-property: box-shadow;
+        transition-property: 0.8s;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article i {
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+
+    main section article i:hover {
+        transform: rotateZ(270deg)
+    }
+
+    .footer {
+        flex-flow: row;
+    }
+}
+
+
+
+
+/* Mobile
+0 hasta 425 px
+Tablet
+426 hasta 768 px
+Desktop
+769 o mas */

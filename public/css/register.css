@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    margin: 20px auto;
+    max-width: 400px;
+
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+
+}
+
+
+.content-input input[type=checkbox]+i {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form div .button {
+    text-align: center;
+}
+
+.content-input i {
+    padding: 10px 20px 10px;
+}

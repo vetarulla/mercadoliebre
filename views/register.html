@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Registro de Usuario</title>
+</head>
+
+<body>
+    <form action="/" method="post">
+        <div>
+            <label for="fullName"> Nombre y apellido</label>
+            <input name="fullName" id="fullName" type="text" minlength="6" placeholder="Ingrese nombre y apellido">
+        </div>
+
+        <div>
+            <label for="userName"> Nombre de usuario </label>
+            <input name="userName" id="userName" type="text" placeholder="Ingrese su usuario">
+        </div>
+
+        <div>
+            <label for="birthDate"> Fecha de nacimiento</label>
+            <input name="birthDate" id="birthDate" type="date" placeholder="Ingrese su fecha de nacimiento">
+        </div>
+
+        <div>
+            <label for="address"> Domicilio</label>
+            <input name="address" id="address" type="text" placeholder="Ingrese su domicilio">
+        </div>
+
+        <div>
+            <h3 class="perfil">Perfil del usuario</h3>
+            <label class="content-input">
+                <input type="radio" name="userType" id="userType" value="buyer"> Comprador
+                <i></i>
+            </label>
+
+            <label class="content-input">
+                <input type="radio" name="userType" id="userType" value="seller"> Vendedor
+                <i></i>
+            </label>
+
+
+            <div>
+                <h3 class="intereses">Intereses</h3>
+                <label class="content-input">
+                    <input type="checkbox" name="userType" value="electro">Electro
+                    <i></i>
+                </label>
+                <label class="content-input">
+                    <input type="checkbox" name="userType" value="moda">Moda
+                    <i></i>
+                </label>
+                <label class="content-input">
+                    <input type="checkbox" name="userType" value="hogar">Hogar
+                    <i></i>
+                </label>
+                <label class="content-input">
+                    <input type="checkbox" name="userType" value="jugueteria">Juguetería
+                    <i></i>
+                </label>
+                <label class="content-input">
+                    <input type="checkbox" name="userType" value="vidaSana"> Vida sana
+                    <i></i>
+                </label>
+            </div>
+
+            <div>
+                <label for="photo"> Foto de usuario</label>
+                <input name="photo" id="photo" type="file" accept=".jpg, .png, .jpeg"
+                    placeholder="Ingrese su foto de perfil">
+            </div>
+
+            <div>
+                <label for="password"> Contraseña</label>
+                <input name="password" id="password" type="password" placeholder="Ingrese su contraseña">
+            </div>
+
+            <div>
+                <label for="confirmPassword"> Confirme su Contraseña</label>
+                <input name="confirmPassword" id="confirmPassword" type="password"
+                    placeholder="Ingrese su contraseña nuevamente">
+            </div>
+
+            <div class="button">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+
+    </form>
+</body>
+
+</html>
